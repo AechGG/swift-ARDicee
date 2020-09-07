@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ARDicee-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARDicee" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7BR-g3-m8i">
+                    <navigationItem key="navigationItem" title="ARDicee" id="7BR-g3-m8i">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="trash" catalog="system" id="SmJ-xA-r4U">
+                            <connections>
+                                <action selector="removeAllDice:" destination="BV1-FR-VrT" id="HmR-v0-9pU"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.clockwise" catalog="system" id="OoS-M0-TwB">
                             <connections>
                                 <action selector="rollAgain:" destination="BV1-FR-VrT" id="BYd-qa-SXt"/>
@@ -64,5 +69,6 @@
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
     </resources>
 </document>
